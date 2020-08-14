@@ -13,8 +13,8 @@ class Patient
     @@all 
   end 
   
-  def new_appointment(waiter, total, tip=0)
-    Meal.new(waiter, self, total, tip)  
+  def new_appointment(date, doctor)
+    Appointment.new(date, self, doctor)  
   end 
   
   def appointments 
