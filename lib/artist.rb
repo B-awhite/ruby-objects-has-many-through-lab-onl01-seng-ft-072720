@@ -15,5 +15,6 @@ class Artist
   
   def new_song
     
+  end 
   
 end 
