@@ -13,7 +13,9 @@ class Patient
     @@all 
   end 
   
-  
+  def new_appointment(waiter, total, tip=0)
+    Meal.new(waiter, self, total, tip)  
+  end 
   
   def appointments 
     Appointment.all.select do |appointment|
